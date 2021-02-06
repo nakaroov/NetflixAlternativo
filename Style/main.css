@@ -1,0 +1,130 @@
+:root{
+    --vermelho:#E50914; 
+    --preto: #141414;
+    --teste: #ffffff;
+    --texto: #AAA;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; /* limite borda na caixa*/
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+   color: var(--vermelho);
+   font-family: 'Arial Black', Times;
+   font-size: 40px;
+}
+
+header nav a{
+    color: var(--texto);
+    text-decoration: none;
+    margin-right: 10px;
+ }
+
+ header nav a:hover{
+     color : #afff
+ }
+
+ .main-film{
+     font-size: 20px;
+     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.40)100%), url('../img/internacional.jpg');
+
+     height: 400px;
+     background-size: cover;
+     background-position-y: 20%;
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .main-film  .descricao{
+     font-size: 16px;
+     margin-bottom: 10px;}
+
+
+ .main-film .titulo{
+     margin-top: 20px;
+     font-size: 35px;
+     margin-bottom: 20px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .botao{ 
+     background: rgba(0, 0, 0, 0.678) ;
+     border: none;
+     color: white;
+     padding: 15px 25px;
+     margin-left: 20px;
+     font-size: 12px;
+
+     cursor: pointer;
+     transition: .4s ease all;
+ } 
+
+ .botao:hover{
+     background-color: blanchedalmond;
+     color: black
+ }
+
+ .botao i{
+     margin: 8px
+ }
+ 
+
+ .bw{ 
+    background: #008a12 ;
+    border: none;
+    color: #141414;
+    padding: 8px;
+    margin-left: 0px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .2s ease all;}
+
+    .bd{ 
+        background: #ecfd00 ;
+        border: none;
+        color: #141414;
+        padding: 8px;
+        margin-left: 0px;
+        font-size: 12px;
+    
+        cursor: pointer;
+        transition: .2s ease all;}
+
+.container{
+    margin-left: 20px;
+}
+
+.main-film .container{
+    width: 60%;
+}
+
+.box-filme{
+    width: 100%;
+    height: 300px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
